@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    /* Backgorund Color */
+    --bg-primary-color: #548687;
+    --bg-reset-color: #191913;
+}
+
+body{
+    background-color: var(--bg-primary-color);
+    text-align: center;
+}
+
+.container{
+    height: 70vh; /* 70% of webpage height is given to container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;   /* 60% given to game box */
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vmin;    /*  divided into 3 parts  */
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+}
+
+#reset-btn{
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--bg-reset-color);
+    color: aliceblue;
+}
+
+#new-btn{
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--bg-reset-color);
+    color: aliceblue;
+}
+
+#msg {
+  color: #ffffc7;
+  font-size: 5vmin;
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hide {
+  display: none;
+}
